@@ -1,4 +1,4 @@
-<h2>Digital Innovation: Expert class - Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot</h2>
+<h2>Digital Innovation: Desenvolvendo um sistema de gerenciamento de pessoas em API REST com Spring Boot</h2>
 
 
 Durante as aulas, foram desenvolvidos e abordados os seguintes tópicos:
