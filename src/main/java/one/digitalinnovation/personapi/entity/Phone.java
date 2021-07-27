@@ -25,7 +25,7 @@ public class Phone {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING) // indica a entrada dos dados definida no enun
     @Column(nullable = false)
     private PhoneType type;
 
