@@ -33,7 +33,7 @@ public class Person {
     @Column(nullable = false)
     private String lastName;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = true). // unique, so cadastra dados com cpf unico.
     private String cpf;
 
     private LocalDate birthDate;
