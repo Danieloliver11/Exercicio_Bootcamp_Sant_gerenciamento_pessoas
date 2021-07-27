@@ -40,4 +40,16 @@ public class Person {
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<Phone> phones;
+    
+    /* definimos uma propriedade “fetch” = FetchType.LAZY. Isso significa que ao realizarmos um 
+	“SELECT * from FuncionarioLazy” teremos todos os campos retornados, mas os campos com a 
+	propriedade FetchType.LAZY estarão nulos, mesmo que eles existam no banco. Essa é uma forma de n
+	ão sobrecarregar sua aplicação com dados inúteis que não serão utilizados, tornando-a rápida e 
+	performática.
+	
+	Voltando ao nosso cenário de exemplo, temos então a classe FuncionarioLazy acima, e precisamos 
+	de uma lista com todos os nomes e idades dos funcionários da empresa. Faremos um simples 
+	“SELECT * FROM FuncionarioLazy” e temos todos os dados em mãos, nosso objeto estará carregado \
+	apenas com o nome e idade, todos os outros campos estarão nulos.
+	*/
 }
